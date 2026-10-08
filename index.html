@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Placement Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        h2 {
+            color: #1f4e79;
+        }
+
+        .info {
+            margin: 10px 0;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #message {
+            color: green;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>College Placement Portal</h1>
+        <p>Campus Recruitment and Placement Information</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>College Information</h2>
+
+            <div class="info">
+                <span class="label">College:</span>
+                ABC College of Engineering
+            </div>
+
+            <div class="info">
+                <span class="label">Department:</span>
+                Computer Science and Engineering
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Placement Opportunity</h2>
+
+            <div class="info">
+                <span class="label">Company Name:</span>
+                Tech Solutions Pvt Ltd
+            </div>
+
+            <div class="info">
+                <span class="label">Job Role:</span>
+                Software Developer
+            </div>
+
+            <div class="info">
+                <span class="label">Eligibility:</span>
+                B.Tech / B.E with minimum 60% marks
+            </div>
+
+            <div class="info">
+                <span class="label">Salary Package:</span>
+                ₹6,00,000 per annum
+            </div>
+
+            <div class="info">
+                <span class="label">Application Deadline:</span>
+                30 October 2026
+            </div>
+
+            <div class="info">
+                <span class="label">Placement Contact:</span>
+                placement@abccollege.edu
+            </div>
+
+            <button type="button" onclick="applyPlacement()">
+                Apply for Placement
+            </button>
+
+            <p id="message"></p>
+        </div>
+
+        <div class="card">
+            <h2>Placement Information</h2>
+
+            <p>
+                Students can use this portal to view company details,
+                job roles, eligibility requirements, salary packages,
+                application deadlines and placement contact information.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function applyPlacement() {
+            document.getElementById("message").innerHTML =
+                "Your placement application has been recorded successfully!";
+        }
+    </script>
+
+</body>
+
+</html>
